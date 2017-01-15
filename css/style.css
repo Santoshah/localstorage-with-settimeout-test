@@ -1,0 +1,99 @@
+/* my vanilla css */
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+table, td, tr {
+  border-collapse: collapse;
+  border: 1px solid #ccc; }
+
+th {
+  font-weight: bold; }
+
+table, td, tr, th {
+  padding: 5px 15px;
+  border-collapse: 0;
+  border: 1px solid #ccc;
+  border-width: 1px; }
+
+table {
+  clear: both; }
+
+th {
+  cursor: pointer; }
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000;
+  display: inline-block; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  display: inline-block; }
+
+.greenbox {
+  background: green;
+  width: 500px;
+  height: 500px;
+  position: absolute; }
+
+.item {
+  width: 100px;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+  background: #ccc;
+  margin-bottom: 5px;
+  text-align: center;
+  color: red; }

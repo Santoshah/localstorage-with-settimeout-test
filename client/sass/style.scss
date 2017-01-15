@@ -1,0 +1,47 @@
+/* my vanilla css */
+@import "sprite";
+body { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+table, td, tr {
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+th { font-weight: bold; }
+table, td, tr, th {
+	padding: 5px 15px;
+	border-collapse: 0;
+	border: 1px solid #ccc;
+	border-width: 1px;
+}	
+
+table {clear:both}
+th {cursor: pointer}
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #000;
+	display: inline-block;
+}
+
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000;
+	display: inline-block;
+}
+.greenbox { background: green; width: 500px; height: 500px; position: absolute; }
+
+.item {
+    width: 100px;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 50px;
+    background: #ccc;
+    margin-bottom: 5px;
+    text-align: center;
+    color: red;
+}
